@@ -4,5 +4,7 @@
   "country_time": "en-US",
   "todayCode": "2344",
   "doTasks": true,
-  "upgradeCards": false
+  "upgradeCards": false,
+  "delayEachAccount": [1, 81],
+  "referralCode": "VbepV8Z9_6713068747"
 }
