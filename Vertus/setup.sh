@@ -43,7 +43,7 @@ EOL
 }
 
 check_configs() {
-    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.howManyAccountsRunInOneTime !== 'number' || cfg.howManyAccountsRunInOneTime < 1) throw new Error('Invalid config');" 2>/dev/null; then
+    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.limit !== 'number' || cfg.limit < 1) throw new Error('Invalid config');" 2>/dev/null; then
         print_red "Invalid configuration detected. Resetting to default values..."
         create_default_configs
         print_green "Configuration reset completed."
